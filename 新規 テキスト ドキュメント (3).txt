@@ -1,0 +1,10 @@
+curl -i -X POST -H "Authorization: Bearer your_mattermost_token" \
+    -H "Content-Type: application/json" \
+    -d "{\"login_id\": \"your_username\", \"password\": \"your_password\"}" \
+    https://your_mattermost_instance.com/api/v4/users/login
+
+curl -X GET -H "Authorization: Bearer your_mattermost_token" \
+    -H "X-CSRF-Token: your_csrf_token" \
+    https://your_mattermost_instance.com/api/v4/another_endpoint
+
+glpat-dsiAABxwxJ9VxLxvu_by
